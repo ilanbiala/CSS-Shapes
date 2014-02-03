@@ -6,7 +6,9 @@ $(document).ready(function() {
 		}
 		var elem = $(this);
 		var propToChange = elem.attr('data-css');
-		propToChange ? console.log('gonna change stuff') : console.log('no css to change'); return;
+		if (propToChange === undefined) {
+			return;
+		}
 		var elemToChange = elem.parent().parent().prev().children();
 		if (propToChange == 'transform') {
 			console.log(propToChange, 'skew(' + elem.text() + ')');
