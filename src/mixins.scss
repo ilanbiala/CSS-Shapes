@@ -1,0 +1,82 @@
+@mixin rectangle($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin parallelogram($width, $height, $skew) {
+	@include rectangle($width, $height);
+	-webkit-transform: skew($skew);
+	-moz-transform: skew($skew);
+	-ms-transform: skew($skew);
+	-o-transform: skew($skew);
+	transform: skew($skew);
+}
+
+@mixin square($size) {
+	@include rectangle($size, $size);
+}
+
+@mixin circle($size) {
+	@include square($size);
+	-webkit-border-radius: $size / 2;
+	-moz-border-radius: $size / 2;
+	border-radius: $size / 2;
+}
+
+@mixin oval($width, $height) {
+	width: $width;
+	height: $height;
+	-webkit-border-radius: #{$width} / #{$height};
+	-moz-border-radius: #{$width} / #{$height};
+	border-radius: #{$width} / #{$height};
+}
+
+@mixin triangle($direction, $size, $color) {
+	width: 0;
+	height: 0;
+
+	@if $direction == 'up' { 
+		border-right: $size solid transparent;
+		border-bottom: $size * 1.732 solid $color; 
+		border-left: $size solid transparent; 
+	} @else if $direction == 'down' {
+		border-top: $size * 1.732 solid $color; 
+		border-right: $size solid transparent; 
+		border-left: $size solid transparent; 
+	} @else if $direction == 'left' {
+		border-top: $size solid transparent; 
+		border-right: $size * 1.732 solid $color; 
+		border-bottom: $size solid transparent; 
+	} @else if $direction == 'right' {
+		border-top: $size solid transparent; 
+		border-bottom: $size solid transparent; 
+		border-left: $size * 1.732 solid $color; 
+	}
+}
+
+@mixin corner-triangle($corner, $size, $color) {
+	width: 0;
+	height: 0;
+
+	@if $corner == 'top-left' { 
+		border-top: $size solid $color;
+		border-right: $size solid transparent;
+	} @else if $corner == 'top-right' {
+		border-top: $size solid $color;
+		border-left: $size solid transparent; 
+	} @else if $corner == 'bottom-left' {
+		border-right: $size solid transparent;
+		border-bottom: $size solid $color;
+	} @else if $corner == 'bottom-right' {
+		border-bottom: $size solid $color;
+		border-left: $size solid transparent;
+	}
+}
+
+@mixin trapezoid($width, $color) {
+	width: $width;
+	height: 0;
+	border-right: $width / 2 solid transparent;
+	border-bottom: $width solid $color;
+	border-left: $width / 2 solid transparent;
+}
