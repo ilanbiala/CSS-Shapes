@@ -33,7 +33,7 @@
             <p>SCSS mixins of some of the most common shapes.</p>
 
             <h3><a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h3>
-
+            <h4>Any italicized values can be edited, just click on the value and change it to play around with the styles.</h4>
             <section class="example">
                 <h5>Rectangles</h5>
                 <div class="bs-docs-example">
@@ -41,7 +41,7 @@
                 </div>
                 <pre class="code">
                     <li>#rectangle {</li>
-                    <li>    @include rectangle(100px, 40px, red);</li>
+                    <li>    @include rectangle(<em data-css="width" contenteditable="true">100px</em>, <em data-css="height" contenteditable="true">40px</em>, <em data-css="background" contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -52,7 +52,7 @@
                 </div>
                 <pre class="code">
                     <li>#parallelogram {</li>
-                    <li>    @include parallelogram(100px, 70px, 10deg, red);</li>
+                    <li>    @include parallelogram(<em data-css="width" contenteditable="true">100px</em>, <em data-css="height" contenteditable="true">70px</em>, <em data-css="transform" contenteditable="true">10deg</em>, <em data-css="background" contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -63,7 +63,7 @@
                 </div>
                 <pre class="code">
                     <li>#square {</li>
-                    <li>    @include square(100px, red);</li>
+                    <li>    @include square(<em data-css="width" data-css-two="height" contenteditable="true">100px</em>, <em data-css="background" contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -74,7 +74,7 @@
                 </div>
                 <pre class="code">
                     <li>#circle {</li>
-                    <li>    @include circle(100px, red);</li>
+                    <li>    @include circle(<em data-css="width" data-css-two="height" data-css-three="border-radius" contenteditable="true">100px</em>, <em data-css="background" contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -85,7 +85,7 @@
                 </div>
                 <pre class="code">
                     <li>#oval {</li>
-                    <li>    @include oval(100px, 50px, red);</li>
+                    <li>    @include oval(<em contenteditable="true">100px</em>, <em contenteditable="true">50px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -99,19 +99,19 @@
                 </div>
                 <pre class="code">
                     <li>#up-triangle {</li>
-                    <li>    @include triangle(up, 60px, red);</li>
+                    <li>    @include triangle(up, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#down-triangle {</li>
-                    <li>    @include triangle(down, 60px, red);</li>
+                    <li>    @include triangle(down, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#left-triangle {</li>
-                    <li>    @include triangle(left, 60px, red);</li>
+                    <li>    @include triangle(left, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#right-triangle {</li>
-                    <li>    @include triangle(right, 60px, red);</li>
+                    <li>    @include triangle(right, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -125,19 +125,19 @@
                 </div>
                 <pre class="code">
                     <li>#top-left-triangle {</li>
-                    <li>    @include corner-triangle(top-left, 60px, red);</li>
+                    <li>    @include corner-triangle(top-left, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#top-right-triangle {</li>
-                    <li>    @include corner-triangle(top-right, 60px, red);</li>
+                    <li>    @include corner-triangle(top-right, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#bottom-left-triangle {</li>
-                    <li>    @include corner-triangle(bottom-left, 60px, red);</li>
+                    <li>    @include corner-triangle(bottom-left, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#bottom-right-triangle {</li>
-                    <li>    @include corner-triangle(bottom-right, 60px, red);</li>
+                    <li>    @include corner-triangle(bottom-right, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -148,7 +148,7 @@
                 </div>
                 <pre class="code">
                     <li>#trapezoid {</li>
-                    <li>    @include trapezoid(80px, red);</li>
+                    <li>    @include trapezoid(<em contenteditable="true">80px</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -159,7 +159,7 @@
                 </div>
                 <pre class="code">
                     <li>#chevron {</li>
-                    <li>    @include chevron(down<sup>*</sup>, 120px, 40px, 15deg, red);</li>
+                    <li>    @include chevron(down<sup>*</sup>, <em contenteditable="true">120px</em>, <em contenteditable="true">40px</em>, <em contenteditable="true">15deg</em>, <em contenteditable="true">red</em>);</li>
                     <li>}</li>
                     <br>
                     <li>* The direction parameter is currently disabled.</li>
@@ -175,6 +175,7 @@
             <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
         </footer>
     </div>
-
+    <script src="javascripts/jquery-1.11.0.min.js"></script>
+    <script src="javascripts/main.js"></script>
 </body>
 </html>
