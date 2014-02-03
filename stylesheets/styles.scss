@@ -1,0 +1,61 @@
+@import 'mixins';
+
+#rectangle {
+	@include rectangle(100px, 40px, red);
+}
+
+#parallelogram {
+	@include parallelogram(100px, 70px, 10deg, red);
+}
+
+#square {
+	@include square(100px, red);
+}
+
+#circle {
+	@include circle(100px, red);
+}
+
+#oval {
+	@include oval(100px, 50px, red);
+}
+
+#up-triangle {
+	@include triangle(up, 60px, red);
+}
+
+#down-triangle {
+	@include triangle(down, 60px, red);
+}
+
+#left-triangle {
+	@include triangle(left, 60px, red);
+}
+
+#right-triangle {
+	@include triangle(right, 60px, red);
+}
+
+#top-left-triangle {
+	@include corner-triangle(top-left, 60px, red);	
+}
+
+#top-right-triangle {
+	@include corner-triangle(top-right, 60px, red);	
+}
+
+#bottom-left-triangle {
+	@include corner-triangle(bottom-left, 60px, red);	
+}
+
+#bottom-right-triangle {
+	@include corner-triangle(bottom-right, 60px, red);	
+}
+
+#trapezoid {
+	@include trapezoid(80px, red);
+}
+
+#chevron {
+	@include chevron(up, 120px, 40px, 20deg, red);
+}
