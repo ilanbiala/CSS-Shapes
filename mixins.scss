@@ -80,3 +80,33 @@
 	border-bottom: $width solid $color;
 	border-left: $width / 2 solid transparent;
 }
+
+@mixin chevron($direction, $width, $height, $skew, $color) {
+	position: relative;
+	width: $width;
+	height: $height;
+	&:before, &:after {
+		position: absolute;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		background: $color;
+		content: '';
+	}
+	&:before {
+		left: 0;
+		-webkit-transform: skew(0deg, $skew);
+		-moz-transform: skew(0deg, $skew);
+		-ms-transform: skew(0deg, $skew);
+		-o-transform: skew(0deg, $skew);
+		transform: skew(0deg, $skew);
+	}
+	&:after {
+		right: 0;
+		-webkit-transform: skew(0deg, -$skew);
+		-moz-transform: skew(0deg, -$skew);
+		-ms-transform: skew(0deg, -$skew);
+		-o-transform: skew(0deg, -$skew);
+		transform: skew(0deg, -$skew);
+	}
+}
