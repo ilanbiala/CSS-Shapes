@@ -1,0 +1,22 @@
+{
+  "name": "CSS-Shapes",
+  "description": "SCSS mixins for some of the most common and useful shapes around.",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Ilan Biala",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbatothemax/CSS-Shapes.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-autoprefixer": "~0.6.5"
+  },
+  "bugs": {
+    "url": "https://github.com/nbatothemax/CSS-Shapes/issues"
+  },
+  "homepage": "https://github.com/nbatothemax/CSS-Shapes"
+}
