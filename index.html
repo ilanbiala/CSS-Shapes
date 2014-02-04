@@ -37,81 +37,81 @@
             <section class="example">
                 <h5>Rectangles</h5>
                 <div class="bs-docs-example">
-                    <div id="rectangle"></div>
+                    <div id="rectangle" data-css="width, height, background"></div>
                 </div>
                 <pre class="code">
                     <li>#rectangle {</li>
-                    <li>    @include rectangle(<em data-css="width" contenteditable="true">100px</em>, <em data-css="height" contenteditable="true">40px</em>, <em data-css="background" contenteditable="true">red</em>);</li>
+                    <li>    @include rectangle(<em>100px</em>, <em>40px</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
             <section class="example">
                 <h5>Parallelograms</h5>
                 <div class="bs-docs-example">
-                    <div id="parallelogram"></div>
+                    <div id="parallelogram" data-css="width, height, transform, background"></div>
                 </div>
                 <pre class="code">
                     <li>#parallelogram {</li>
-                    <li>    @include parallelogram(<em data-css="width" contenteditable="true">100px</em>, <em data-css="height" contenteditable="true">70px</em>, <em data-css="transform" contenteditable="true">10deg</em>, <em data-css="background" contenteditable="true">red</em>);</li>
+                    <li>    @include parallelogram(<em>100px</em>, <em>70px</em>, <em>10deg</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
             <section class="example">
                 <h5>Squares</h5>
                 <div class="bs-docs-example">
-                    <div id="square"></div>
+                    <div id="square" data-css="widthHeight, background"></div>
                 </div>
                 <pre class="code">
                     <li>#square {</li>
-                    <li>    @include square(<em data-css="width" data-css-two="height" contenteditable="true">100px</em>, <em data-css="background" contenteditable="true">red</em>);</li>
+                    <li>    @include square(<em data-css="width" data-css-two="height">100px</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
             <section class="example">
                 <h5>Circles</h5>
                 <div class="bs-docs-example">
-                    <div id="circle"></div>
+                    <div id="circle" data-css="widthHeightBorderRadius, background"></div>
                 </div>
                 <pre class="code">
                     <li>#circle {</li>
-                    <li>    @include circle(<em data-css="width" data-css-two="height" data-css-three="border-radius" contenteditable="true">100px</em>, <em data-css="background" contenteditable="true">red</em>);</li>
+                    <li>    @include circle(<em>100px</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
             <section class="example">
                 <h5>Ovals</h5>
                 <div class="bs-docs-example">
-                    <div id="oval"></div>
+                    <div id="oval" data-css="width, height, background"></div>
                 </div>
                 <pre class="code">
                     <li>#oval {</li>
-                    <li>    @include oval(<em contenteditable="true">100px</em>, <em contenteditable="true">50px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include oval(<em>100px</em>, <em>50px</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
             <section class="example">
                 <h5>Equilateral triangles</h5>
                 <div class="bs-docs-example">
-                    <div id="up-triangle"></div>
-                    <div id="down-triangle"></div>
-                    <div id="left-triangle"></div>
-                    <div id="right-triangle"></div>
+                    <div id="up-triangle" data-css="border-bottom, background"></div>
+                    <div id="down-triangle" data-css="border-top, background"></div>
+                    <div id="left-triangle" data-css="border-right, background"></div>
+                    <div id="right-triangle" data-css="border-left, background"></div>
                 </div>
                 <pre class="code">
                     <li>#up-triangle {</li>
-                    <li>    @include triangle(up, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include triangle(up, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#down-triangle {</li>
-                    <li>    @include triangle(down, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include triangle(down, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#left-triangle {</li>
-                    <li>    @include triangle(left, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include triangle(left, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#right-triangle {</li>
-                    <li>    @include triangle(right, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include triangle(right, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
@@ -125,41 +125,41 @@
                 </div>
                 <pre class="code">
                     <li>#top-left-triangle {</li>
-                    <li>    @include corner-triangle(top-left, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include corner-triangle(top-left, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#top-right-triangle {</li>
-                    <li>    @include corner-triangle(top-right, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include corner-triangle(top-right, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#bottom-left-triangle {</li>
-                    <li>    @include corner-triangle(bottom-left, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include corner-triangle(bottom-left, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                     <hr>
                     <li>#bottom-right-triangle {</li>
-                    <li>    @include corner-triangle(bottom-right, <em contenteditable="true">60px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include corner-triangle(bottom-right, <em>60px</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
             <section class="example">
                 <h5>Trapezoids</h5>
                 <div class="bs-docs-example">
-                    <div id="trapezoid"></div>
+                    <div id="trapezoid" data-css="xyz, background"></div>
                 </div>
                 <pre class="code">
                     <li>#trapezoid {</li>
-                    <li>    @include trapezoid(<em contenteditable="true">80px</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include trapezoid(<em>80px</em>, <em>red</em>);</li>
                     <li>}</li>
                 </pre>
             </section>
             <section class="example">
                 <h5>Chevrons</h5>
                 <div class="bs-docs-example">
-                    <div id="chevron"></div>
+                    <div id="chevron" data-css="width, height, xyz, background"></div>
                 </div>
                 <pre class="code">
                     <li>#chevron {</li>
-                    <li>    @include chevron(down<sup>*</sup>, <em contenteditable="true">120px</em>, <em contenteditable="true">40px</em>, <em contenteditable="true">15deg</em>, <em contenteditable="true">red</em>);</li>
+                    <li>    @include chevron(down<sup>*</sup>, <em>120px</em>, <em>40px</em>, <em>15deg</em>, <em>red</em>);</li>
                     <li>}</li>
                     <br>
                     <li>* The direction parameter is currently disabled.</li>
