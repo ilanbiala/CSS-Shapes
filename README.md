@@ -3,12 +3,12 @@ CSS-Shapes
 
 CSS Shapes defined using Sass mixins.
 
-For example implementations, head on over to the [demo page](http://ilanbiala.github.io/CSS-Shapes/).
+For example implementations, head on over to the [demo page](http://ilanbiala.github.io/CSS-Shapes).
 
 Contributing
 ============
 
-Check out the wiki for parts of the project that need some work.
+Check out the [wiki](https://github.com/ilanbiala/CSS-Shapes/wiki) for parts of the project that need some work.
 
 Changelog
 =========
