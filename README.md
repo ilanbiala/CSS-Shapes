@@ -13,3 +13,6 @@ Check out the [wiki](https://github.com/ilanbiala/CSS-Shapes/wiki) for parts of 
 Changelog
 =========
 1.0.0 - rectangles, parallelograms, squares, circles, ovals, triangles, corner triangles, trapezoids, chevrons
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ilanbiala/css-shapes/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
