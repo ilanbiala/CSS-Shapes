@@ -15,8 +15,3 @@ Changelog
 1.0.0 - rectangles, parallelograms, squares, circles, ovals, triangles, corner triangles, trapezoids, chevrons
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ilanbiala/css-shapes/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ilanbiala/css-shapes/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
