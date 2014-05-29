@@ -1,0 +1,15 @@
+{
+	"name": "CSS-Shapes",
+	"description": "SCSS mixins for some of the most common and useful shapes around.",
+	"version": "2.0.0-pre",
+	"private": false,
+	"author": "Ilan Biala",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ilanbiala/CSS-Shapes.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ilanbiala/CSS-Shapes/issues"
+	},
+	"homepage": "http://ilanbiala.github.io/CSS-Shapes/"
+}
