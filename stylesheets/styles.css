@@ -94,25 +94,30 @@
   border-bottom: 80px solid red;
   border-left: 40px solid transparent; }
 
-#chevron {
+#up-chevron {
   position: relative;
   width: 120px;
-  height: 40px; }
-  #chevron:before, #chevron:after {
+  height: 40px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+  #up-chevron:before, #up-chevron:after {
     position: absolute;
     top: 0;
     width: 50%;
     height: 100%;
     background: red;
     content: ''; }
-  #chevron:before {
+  #up-chevron:before {
     left: 0;
     -webkit-transform: skew(0deg, 20deg);
     -moz-transform: skew(0deg, 20deg);
     -ms-transform: skew(0deg, 20deg);
     -o-transform: skew(0deg, 20deg);
     transform: skew(0deg, 20deg); }
-  #chevron:after {
+  #up-chevron:after {
     right: 0;
     -webkit-transform: skew(0deg, -20deg);
     -moz-transform: skew(0deg, -20deg);
@@ -120,4 +125,90 @@
     -o-transform: skew(0deg, -20deg);
     transform: skew(0deg, -20deg); }
 
-/*# sourceMappingURL=styles.css.map */
+#down-chevron {
+  position: relative;
+  width: 120px;
+  height: 40px; }
+  #down-chevron:before, #down-chevron:after {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+    content: ''; }
+  #down-chevron:before {
+    left: 0;
+    -webkit-transform: skew(0deg, 20deg);
+    -moz-transform: skew(0deg, 20deg);
+    -ms-transform: skew(0deg, 20deg);
+    -o-transform: skew(0deg, 20deg);
+    transform: skew(0deg, 20deg); }
+  #down-chevron:after {
+    right: 0;
+    -webkit-transform: skew(0deg, -20deg);
+    -moz-transform: skew(0deg, -20deg);
+    -ms-transform: skew(0deg, -20deg);
+    -o-transform: skew(0deg, -20deg);
+    transform: skew(0deg, -20deg); }
+
+#left-chevron {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+  #left-chevron:before, #left-chevron:after {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+    content: ''; }
+  #left-chevron:before {
+    left: 0;
+    -webkit-transform: skew(0deg, 20deg);
+    -moz-transform: skew(0deg, 20deg);
+    -ms-transform: skew(0deg, 20deg);
+    -o-transform: skew(0deg, 20deg);
+    transform: skew(0deg, 20deg); }
+  #left-chevron:after {
+    right: 0;
+    -webkit-transform: skew(0deg, -20deg);
+    -moz-transform: skew(0deg, -20deg);
+    -ms-transform: skew(0deg, -20deg);
+    -o-transform: skew(0deg, -20deg);
+    transform: skew(0deg, -20deg); }
+
+#right-chevron {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+  #right-chevron:before, #right-chevron:after {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+    content: ''; }
+  #right-chevron:before {
+    left: 0;
+    -webkit-transform: skew(0deg, 20deg);
+    -moz-transform: skew(0deg, 20deg);
+    -ms-transform: skew(0deg, 20deg);
+    -o-transform: skew(0deg, 20deg);
+    transform: skew(0deg, 20deg); }
+  #right-chevron:after {
+    right: 0;
+    -webkit-transform: skew(0deg, -20deg);
+    -moz-transform: skew(0deg, -20deg);
+    -ms-transform: skew(0deg, -20deg);
+    -o-transform: skew(0deg, -20deg);
+    transform: skew(0deg, -20deg); }

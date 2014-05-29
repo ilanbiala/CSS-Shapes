@@ -34,39 +34,39 @@
 	background: $color;
 }
 
-@mixin triangle($direction, $size, $color) {
+@mixin triangle($size, $color, $direction: 'up') {
 	width: 0;
 	height: 0;
 
-	@if $direction == 'up' { 
+	@if $direction == 'up' {
 		border-right: $size solid transparent;
-		border-bottom: $size * 1.732 solid $color; 
-		border-left: $size solid transparent; 
+		border-bottom: $size * 1.732 solid $color;
+		border-left: $size solid transparent;
 	} @else if $direction == 'down' {
-		border-top: $size * 1.732 solid $color; 
-		border-right: $size solid transparent; 
-		border-left: $size solid transparent; 
+		border-top: $size * 1.732 solid $color;
+		border-right: $size solid transparent;
+		border-left: $size solid transparent;
 	} @else if $direction == 'left' {
-		border-top: $size solid transparent; 
-		border-right: $size * 1.732 solid $color; 
-		border-bottom: $size solid transparent; 
+		border-top: $size solid transparent;
+		border-right: $size * 1.732 solid $color;
+		border-bottom: $size solid transparent;
 	} @else if $direction == 'right' {
-		border-top: $size solid transparent; 
-		border-bottom: $size solid transparent; 
-		border-left: $size * 1.732 solid $color; 
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size * 1.732 solid $color;
 	}
 }
 
-@mixin corner-triangle($corner, $size, $color) {
+@mixin corner-triangle($size, $color, $corner: 'top-left') {
 	width: 0;
 	height: 0;
 
-	@if $corner == 'top-left' { 
+	@if $corner == 'top-left' {
 		border-top: $size solid $color;
 		border-right: $size solid transparent;
 	} @else if $corner == 'top-right' {
 		border-top: $size solid $color;
-		border-left: $size solid transparent; 
+		border-left: $size solid transparent;
 	} @else if $corner == 'bottom-left' {
 		border-right: $size solid transparent;
 		border-bottom: $size solid $color;
@@ -84,10 +84,33 @@
 	border-left: $width / 2 solid transparent;
 }
 
-@mixin chevron($direction, $width, $height, $skew, $color) {
+@mixin chevron($width, $height, $skew, $color, $direction: 'up') {
 	position: relative;
 	width: $width;
 	height: $height;
+
+	@if $direction == 'up' {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	} @else if $direction == 'down' {
+		// all good as is
+	} @else if $direction == 'left' {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	} @else if $direction == 'right' {
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+
 	&:before, &:after {
 		position: absolute;
 		top: 0;

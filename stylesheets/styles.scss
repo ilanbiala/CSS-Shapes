@@ -21,41 +21,53 @@
 }
 
 #up-triangle {
-	@include triangle(up, 60px, red);
+	@include triangle(60px, red, up);
 }
 
 #down-triangle {
-	@include triangle(down, 60px, red);
+	@include triangle(60px, red, down);
 }
 
 #left-triangle {
-	@include triangle(left, 60px, red);
+	@include triangle(60px, red, left);
 }
 
 #right-triangle {
-	@include triangle(right, 60px, red);
+	@include triangle(60px, red, right);
 }
 
 #top-left-triangle {
-	@include corner-triangle(top-left, 60px, red);	
+	@include corner-triangle(60px, red, top-left);
 }
 
 #top-right-triangle {
-	@include corner-triangle(top-right, 60px, red);	
+	@include corner-triangle(60px, red, top-right);
 }
 
 #bottom-left-triangle {
-	@include corner-triangle(bottom-left, 60px, red);	
+	@include corner-triangle(60px, red, bottom-left);
 }
 
 #bottom-right-triangle {
-	@include corner-triangle(bottom-right, 60px, red);	
+	@include corner-triangle(60px, red, bottom-right);
 }
 
 #trapezoid {
 	@include trapezoid(80px, red);
 }
 
-#chevron {
-	@include chevron(up, 120px, 40px, 20deg, red);
+#up-chevron {
+	@include chevron(120px, 40px, 20deg, red);
+}
+
+#down-chevron {
+	@include chevron(120px, 40px, 20deg, red, down);
+}
+
+#left-chevron {
+	@include chevron(120px, 40px, 20deg, red, left);
+}
+
+#right-chevron {
+	@include chevron(120px, 40px, 20deg, red, right);
 }

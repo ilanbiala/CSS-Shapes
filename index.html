@@ -28,7 +28,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
         <section id="main_content" class="inner">
-            <h3><a name="scss-shapes" class="anchor" href="#scss-shapes"><span class="octicon octicon-link"></span></a>(s)CSS Shapes</h3>
+            <h3><a name="scss-shapes" class="anchor" href="#scss-shapes"><span class="octicon octicon-link"></span></a>CSS Shapes</h3>
 
             <p>SCSS mixins of some of the most common shapes.</p>
 
@@ -163,6 +163,32 @@
                     <li>}</li>
                     <br>
                     <li>* The direction parameter is currently disabled.</li>
+                </pre>
+            </section>
+            <section class="example">
+                <h5>Chevrons triangles</h5>
+                <div class="bs-docs-example">
+                    <div id="up-chevron" data-css="width, height, xyz, background, direction"></div>
+                    <div id="down-chevron" data-css="width, height, xyz, background, direction"></div>
+                    <div id="left-chevron" data-css="width, height, xyz, background, direction"></div>
+                    <div id="right-chevron" data-css="width, height, xyz, background, direction"></div>
+                </div>
+                <pre class="code">
+                    <li>#up-chevron {</li>
+                    <li>    @include chevron(<em>120px</em>, <em>40px</em>, <em>20deg</em>, <em>red</em>, up);</li>
+                    <li>}</li>
+                    <hr>
+                    <li>#down-chevron {</li>
+                    <li>    @include chevron(<em>120px</em>, <em>40px</em>, <em>20deg</em>, <em>red</em>, down);</li>
+                    <li>}</li>
+                    <hr>
+                    <li>#left-chevron {</li>
+                    <li>    @include chevron(<em>120px</em>, <em>40px</em>, <em>20deg</em>, <em>red</em>, left);</li>
+                    <li>}</li>
+                    <hr>
+                    <li>#right-chevron {</li>
+                    <li>    @include triangle(<em>120px</em>, <em>40px</em>, <em>20deg</em>, <em>red</em>, right);</li>
+                    <li>}</li>
                 </pre>
             </section>
         </section>

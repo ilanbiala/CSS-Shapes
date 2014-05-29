@@ -468,6 +468,10 @@ Custom styles
     user-select: none;
 }
 
-div[id*="triangle"] {
+div[id*="triangle"], div[id*="chevron"] {
     display: inline-block;
+}
+
+div.bs-docs-example + pre > div[id*="chevron"] {
+    padding: 50px;
 }
