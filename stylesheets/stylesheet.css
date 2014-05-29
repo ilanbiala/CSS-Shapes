@@ -472,6 +472,6 @@ div[id*="triangle"], div[id*="chevron"] {
     display: inline-block;
 }
 
-div.bs-docs-example + pre > div[id*="chevron"] {
+div.bs-docs-example.chevrons {
     padding: 50px;
 }
