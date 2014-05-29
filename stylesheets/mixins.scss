@@ -5,7 +5,7 @@
 }
 
 @mixin parallelogram($width, $height, $skew, $color) {
-	@include rectangle($width, $height, $color);
+	@include rectangle($width, $height);
 	background: $color;
 	-webkit-transform: skew($skew);
 	-moz-transform: skew($skew);
@@ -34,7 +34,7 @@
 	background: $color;
 }
 
-@mixin triangle($direction, $size, $color) {
+@mixin triangle($size, $color, $direction: 'up') {
 	width: 0;
 	height: 0;
 
@@ -57,7 +57,7 @@
 	}
 }
 
-@mixin corner-triangle($corner, $size, $color) {
+@mixin corner-triangle($size, $color, $corner: 'top-left') {
 	width: 0;
 	height: 0;
 
@@ -84,10 +84,31 @@
 	border-left: $width / 2 solid transparent;
 }
 
-@mixin chevron($direction, $width, $height, $skew, $color) {
+@mixin chevron($width, $height, $skew, $color, $direction: 'up') {
 	position: relative;
 	width: $width;
 	height: $height;
+	
+	@if $direction == 'down' {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	} @else if $direction == 'left' {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	} @else if $direction == 'right' {
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	
 	&:before, &:after {
 		position: absolute;
 		top: 0;
