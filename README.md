@@ -14,8 +14,8 @@ Also, please feel free to skim over the [issues](https://github.com/ilanbiala/CS
 
 Changelog
 =========
-2.0.0 - Introduced default directions, chevron can now be oriented
-1.0.1 - Support for autoprefixer and other tools
+2.0.0 - Introduced default directions, chevron can now be oriented  
+1.0.1 - Support for autoprefixer and other tools  
 1.0.0 - rectangles, parallelograms, squares, circles, ovals, triangles, corner triangles, trapezoids, chevrons
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ilanbiala/css-shapes/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
