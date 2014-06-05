@@ -10,6 +10,8 @@ Contributing
 
 Check out the [wiki](https://github.com/ilanbiala/CSS-Shapes/wiki) for parts of the project that need some work.
 
+Also, please feel free to skim over the [issues](https://github.com/ilanbiala/CSS-Shapes/issues?state=open) and offer your thoughts, because this is a public package and it should be shaped (no pun intended) by everyone who uses it.
+
 Changelog
 =========
 2.0.0 - Introduced default directions, chevron can now be oriented
